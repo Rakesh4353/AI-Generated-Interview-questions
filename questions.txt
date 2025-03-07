@@ -1,0 +1,79 @@
+## Medium MCQ Interview Questions (Python Backend Developer)
+
+**1.  Which of the following data structures provides the fastest average-case time complexity for retrieving an element by its key?**
+
+a)  Linked List
+b)  Binary Search Tree
+c)  Hash Table (Dictionary)
+d)  Sorted Array
+
+**Answer: c) Hash Table (Dictionary)**
+
+**Explanation:** Hash tables offer O(1) average-case time complexity for retrieval, making them the fastest among the options.  Binary search trees have O(log n), sorted arrays have O(log n) for binary search, and linked lists have O(n).
+
+**2.  Consider the following Python code snippet:**
+
+```python
+def mystery_function(n):
+    if n <= 1:
+        return n
+    else:
+        return mystery_function(n-1) + mystery_function(n-2)
+
+print(mystery_function(5))
+```
+
+**What does this code calculate and what is its time complexity?**
+
+a)  Calculates the factorial of n, time complexity O(n)
+b)  Calculates the nth Fibonacci number, time complexity O(2^n)
+c)  Calculates the sum of numbers from 1 to n, time complexity O(n)
+d)  Calculates the nth power of 2, time complexity O(log n)
+
+**Answer: b) Calculates the nth Fibonacci number, time complexity O(2^n)**
+
+**Explanation:** This is a recursive implementation of the Fibonacci sequence.  The time complexity is exponential due to repeated recalculations of the same subproblems.
+
+
+**3. You need to store a large number of key-value pairs where the keys are strings and the values are integers.  You need fast lookups, insertions, and deletions. Which data structure in Python is the most suitable?**
+
+a)  List
+b)  Tuple
+c)  Dictionary
+d)  Set
+
+**Answer: c) Dictionary**
+
+**Explanation:** Dictionaries (hash tables) provide O(1) average-case complexity for lookups, insertions, and deletions, making them ideal for this scenario.
+
+
+**4. What is the output of the following Python code that uses list comprehension?**
+
+```python
+my_list = [1, 2, 3, 4, 5]
+result = [x*2 for x in my_list if x % 2 == 0]
+print(result)
+```
+
+a)  [2, 4, 6, 8, 10]
+b)  [4, 8]
+c)  [1, 3, 5]
+d)  [2, 6, 10]
+
+**Answer: b) [4, 8]**
+
+
+**Explanation:** The list comprehension iterates through `my_list`. The `if x % 2 == 0` condition filters for even numbers. The `x*2` expression doubles the filtered even numbers.
+
+
+**5. You have a sorted array of integers. You want to search for a specific element efficiently. Which algorithm is the best choice?**
+
+a) Linear Search
+b) Bubble Sort
+c) Binary Search
+d) Insertion Sort
+
+
+**Answer: c) Binary Search**
+
+**Explanation:**  Binary search takes advantage of the sorted nature of the array to achieve a logarithmic time complexity (O(log n)), which is significantly faster than linear search (O(n)) for large datasets. Bubble sort and insertion sort are sorting algorithms, not searching algorithms.
